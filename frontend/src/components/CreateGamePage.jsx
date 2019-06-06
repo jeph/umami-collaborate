@@ -23,8 +23,10 @@ export default () => {
   }, [])
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    socket.emit('create-room', { roomId: roomCode, name: name })
+    if (name.length <= 13) {
+      e.preventDefault()
+      socket.emit('create-room', { roomId: roomCode, name: name })
+    }
   }
 
   return (

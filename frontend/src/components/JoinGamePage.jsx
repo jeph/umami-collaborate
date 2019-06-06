@@ -27,8 +27,10 @@ export default () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    socket.emit('join-room', { roomId: formState.roomId, name: formState.name })
+    if (formState.name.length <= 13) {
+      e.preventDefault()
+      socket.emit('join-room', { roomId: formState.roomId, name: formState.name })
+    }
   }
 
   if (validRoomCode) {
