@@ -1,0 +1,19 @@
+.greetingContainer {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.greetingContainer h1 {
+  grid-column: 2/7;
+}
+
+.pencilImage {
+  grid-column: 8;
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+}

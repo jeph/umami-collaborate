@@ -1,0 +1,19 @@
+.title-logo {
+    font-size: 2rem;
+}
+
+.nav-wrapper {
+    background: #1376b0 !important;
+}
+
+.btn {
+    background: #c94841;
+}
+
+.btn:hover {
+    background: #c94841;
+}
+
+.page-footer {
+    background: #1376b0 !important;
+}
